@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Todo.css">
+</head>
+<body>
+    <div id="todo-container">
+        
+        <form id="todo-form">
+          <h1 style="font-weight: bolder;">My To Do List</h1>
+          <label>Task Title: </label>
+          <input type="text" placeholder="Title of the task" id="task-title"/>
+          <br>
+          <label> Task Description: </label> <input type="text" placeholder="The description of the task" id="task-desc"/>
+          <br>
+          <label>Expected Completion Date: </label> <input type="date" id="task-date"/></label>
+          <br>
+          <button type="button" onclick="createTask()">Add Task</button>
+        </form>
+        <br>
+        <h3 id="message"></h3>
+        <button type="button"  id="delete-all" onclick="deleteAllTasks()">Delete All Tasks</button>
+        <br>
+       
+        <ul id="task-list"></ul>
+      </div>
+<script src="Todo.js"></script>      
+</body>
+</html>
